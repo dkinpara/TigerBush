@@ -1,0 +1,64 @@
+---| Tiger Bush |---------------
+========================================================
+author: Daniel Kinpara
+date: September 2015
+transition: fade
+transition-speed: slow
+---
+![alt text](http://www.universeofsymbolism.com/images/tiger-in-bush.jpg)
+![alt text](https://c2.staticflickr.com/4/3115/2825862057_3b56d7ebfa_z.jpg?zz=1)
+
+
+-------------------| The Whole Idea |-------------------
+========================================================
+Type: prompt
+### What is *Tiger Bush*?
+- Vegetation formation pattern observed in Niger, at first.
+
+
+### Why to study it?
+- Because people wanted to know if that was a natural occurence.
+
+### Why the present app?
+- To show simulation as a way to find an explanation.
+
+---
+
+![alt text](https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/Tiger_Bush_Niger_Corona_1965-12-31.jpg/350px-Tiger_Bush_Niger_Corona_1965-12-31.jpg)
+
+
+-------------| The Convolution Matrix |------------
+========================================================
+Type: alert
+
+- The effect of sinergy and competition among plants possible through convolution operation.
+- In R, there's the statement *convolve()*.
+- Convolve applies the matrix of effects (kernel) over the original forest.
+
+![alt text](http://homepages.inf.ed.ac.uk/rbf/HIPR2/figs/sobmasks.gif)
+
+
+
+--------------------| The effect |----------------------
+========================================================
+Type: alert
+
+- Let's **Gx** be the forest with trees in different stages
+- And **Gy** the matrix of sinergy (+) and competition (-)
+- It's possible to state that the tree population in the area is stabilized (zero effect)
+
+```{r}
+Gx <- c(-1, -2, -1, 0, 0, 0, 1, 2, 1)
+Gy <- c(1,  0, -1, 2, 0, -2, 1, 0, -1)
+effect <- convolve(Gx, Gy, type = "filter")
+round(effect)
+```
+
+---------------------------| Thank you!
+========================================================
+Type: sub-section
+
+- [Tiger Bush Shiny app](https://dkinpara.shinyapps.io/TigerBush)
+- [Thiery, J.M, D'Herbes, J.M., Valentin, C (1995) paper](http://goo.gl/TTjxCC)
+- [My Tiger Bush repository with R code](https://github.com/dkinpara/TigerBush)
+![alt text](http://www.atmos.albany.edu/student/alonge/Tigerbush%20Aerial.PNG)

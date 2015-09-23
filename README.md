@@ -28,3 +28,5 @@ Cited Literature
 Thiery, J.M, D'Herbes, J.M., Valentin, C. A model simulating the genesis of banded vegetation patterns in Niger. Journal of Ecology n.83, p.497-507, 1995.
 
 The paper can be downloaded here: http://goo.gl/TTjxCC
+
+The app is published at Shiny: https://dkinpara.shinyapps.io/TigerBush

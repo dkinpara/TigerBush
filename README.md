@@ -1,6 +1,6 @@
 # TigerBush
 
-**Author: Daniel Kinpara**, **Date: September 2015**, Brazil
+**Author: Daniel Kinpara, September 2015, Brazil.**
 
 ### Introduction
 The present application simulates the vegetation genesis known as Tiger Bush. It is based on Thiery, D'Herbes & Valentin (1995) paper. The study states that the Tiger Bush can be replicated through a successional model simulating rainfall regimes and the nutrients present in the soil.
